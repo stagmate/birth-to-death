@@ -27,12 +27,15 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.shape.RoundedCornerShape
 import com.birth2death.b2d.data.model.Task
 
+import androidx.compose.material.icons.filled.Face
+
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun TaskListScreen(
     onNavigateToCreate: () -> Unit,
     onNavigateToTimer: () -> Unit,
     onNavigateToRewards: () -> Unit,
+    onNavigateToYoga: () -> Unit,
     onTaskClick: (String) -> Unit
 ) {
     val tasks by TaskRepository.tasks.collectAsState()
@@ -51,6 +54,9 @@ fun TaskListScreen(
                     }
                     IconButton(onClick = onNavigateToRewards) {
                         Icon(Icons.Default.Star, contentDescription = "Rewards Shop")
+                    }
+                    IconButton(onClick = onNavigateToYoga) {
+                        Icon(Icons.Default.Face, contentDescription = "Yoga AI")
                     }
                     Row(
                         verticalAlignment = Alignment.CenterVertically,

@@ -17,6 +17,7 @@ import com.birth2death.b2d.ui.task.TaskDetailScreen
 import com.birth2death.b2d.ui.ar.ARScreen
 import com.birth2death.b2d.ui.task.FocusTimerScreen
 import com.birth2death.b2d.ui.task.RewardsScreen
+import com.birth2death.b2d.ui.task.YogaSessionScreen
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -34,6 +35,7 @@ class MainActivity : ComponentActivity() {
                                 onNavigateToCreate = { navController.navigate("createTask") },
                                 onNavigateToTimer = { navController.navigate("timer") },
                                 onNavigateToRewards = { navController.navigate("rewards") },
+                                onNavigateToYoga = { navController.navigate("yoga") },
                                 onTaskClick = { taskId -> navController.navigate("taskDetail/$taskId") }
                             )
                         }
@@ -59,6 +61,9 @@ class MainActivity : ComponentActivity() {
                         }
                         composable("rewards") {
                             RewardsScreen(onBack = { navController.popBackStack() })
+                        }
+                        composable("yoga") {
+                            YogaSessionScreen(onBack = { navController.popBackStack() })
                         }
                     }
                 }
