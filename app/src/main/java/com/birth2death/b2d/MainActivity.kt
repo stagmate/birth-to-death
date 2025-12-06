@@ -15,6 +15,8 @@ import com.birth2death.b2d.ui.task.TaskListScreen
 import com.birth2death.b2d.ui.task.CreateTaskScreen
 import com.birth2death.b2d.ui.task.TaskDetailScreen
 import com.birth2death.b2d.ui.ar.ARScreen
+import com.birth2death.b2d.ui.task.FocusTimerScreen
+import com.birth2death.b2d.ui.task.RewardsScreen
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -30,6 +32,8 @@ class MainActivity : ComponentActivity() {
                         composable("taskList") {
                             TaskListScreen(
                                 onNavigateToCreate = { navController.navigate("createTask") },
+                                onNavigateToTimer = { navController.navigate("timer") },
+                                onNavigateToRewards = { navController.navigate("rewards") },
                                 onTaskClick = { taskId -> navController.navigate("taskDetail/$taskId") }
                             )
                         }
@@ -49,6 +53,12 @@ class MainActivity : ComponentActivity() {
                         composable("arView/{taskId}") { backStackEntry ->
                              val taskId = backStackEntry.arguments?.getString("taskId")
                              ARScreen(taskId = taskId, onBack = { navController.popBackStack() })
+                        }
+                        composable("timer") {
+                            FocusTimerScreen(onBack = { navController.popBackStack() })
+                        }
+                        composable("rewards") {
+                            RewardsScreen(onBack = { navController.popBackStack() })
                         }
                     }
                 }

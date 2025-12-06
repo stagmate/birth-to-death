@@ -38,6 +38,13 @@ fun ARScreen(
                 scaleToUnits = 0.5f
             ).apply {
                 position = Position(0.0f, 0.0f, -1.0f)
+                isEditable = true
+                onSingleTapConfirmed = {
+                    val currentScale = scale.x
+                    val newScale = currentScale * 1.2f
+                    scale = io.github.sceneview.math.Scale(newScale, newScale, newScale)
+                    true
+                }
             }
             childNodes = listOf(node)
         }

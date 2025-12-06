@@ -16,7 +16,8 @@ data class Task(
     var difficulty: Difficulty = Difficulty.MEDIUM,
     var sentimentScore: Double? = null,
     var emotionalState: EmotionalState? = null,
-    var isOverwhelmedDetected: Boolean = false
+    var isOverwhelmedDetected: Boolean = false,
+    val xpReward: Int = 10
 ) {
     val isOverdue: Boolean
         get() = false // Implement date logic if needed
@@ -117,3 +118,10 @@ enum class EmotionalState {
             THRIVING -> "🌟"
         }
 }
+
+data class UserStats(
+    val level: Int = 1,
+    val currentXp: Int = 0,
+    val requiredXp: Int = 100,
+    val streakDays: Int = 0
+)
