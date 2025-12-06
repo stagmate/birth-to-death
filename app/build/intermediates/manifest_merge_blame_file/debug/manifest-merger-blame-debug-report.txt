@@ -1,0 +1,206 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.birth2death.b2d"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+9        android:targetSdkVersion="34" />
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/Users/kushagrakumar/Documents/GitHub/b2d-production/android-app/app/src/main/AndroidManifest.xml:4:5-67
+11-->/Users/kushagrakumar/Documents/GitHub/b2d-production/android-app/app/src/main/AndroidManifest.xml:4:22-64
+12    <uses-permission android:name="android.permission.CAMERA" />
+12-->/Users/kushagrakumar/Documents/GitHub/b2d-production/android-app/app/src/main/AndroidManifest.xml:5:5-65
+12-->/Users/kushagrakumar/Documents/GitHub/b2d-production/android-app/app/src/main/AndroidManifest.xml:5:22-62
+13
+14    <uses-feature android:name="android.hardware.camera.ar" />
+14-->/Users/kushagrakumar/Documents/GitHub/b2d-production/android-app/app/src/main/AndroidManifest.xml:6:5-63
+14-->/Users/kushagrakumar/Documents/GitHub/b2d-production/android-app/app/src/main/AndroidManifest.xml:6:19-60
+15
+16    <!-- SceneView requires OpenGLES 3.0 or later for 3D rendering. -->
+17    <uses-feature
+17-->[io.github.sceneview:sceneview:2.2.0] /Users/kushagrakumar/.gradle/caches/8.9/transforms/36988991b7d0d3afeac5d1f4498e5baf/transformed/sceneview-2.2.0/AndroidManifest.xml:11:5-13:35
+18        android:glEsVersion="0x00030000"
+18-->[io.github.sceneview:sceneview:2.2.0] /Users/kushagrakumar/.gradle/caches/8.9/transforms/36988991b7d0d3afeac5d1f4498e5baf/transformed/sceneview-2.2.0/AndroidManifest.xml:12:9-41
+19        android:required="true" />
+19-->[io.github.sceneview:sceneview:2.2.0] /Users/kushagrakumar/.gradle/caches/8.9/transforms/36988991b7d0d3afeac5d1f4498e5baf/transformed/sceneview-2.2.0/AndroidManifest.xml:13:9-32
+20
+21    <permission
+21-->[androidx.core:core:1.13.1] /Users/kushagrakumar/.gradle/caches/8.9/transforms/1ed307d3ab5cfd393b6cf41c5e8a1f7b/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
+22        android:name="com.birth2death.b2d.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+22-->[androidx.core:core:1.13.1] /Users/kushagrakumar/.gradle/caches/8.9/transforms/1ed307d3ab5cfd393b6cf41c5e8a1f7b/transformed/core-1.13.1/AndroidManifest.xml:23:9-81
+23        android:protectionLevel="signature" />
+23-->[androidx.core:core:1.13.1] /Users/kushagrakumar/.gradle/caches/8.9/transforms/1ed307d3ab5cfd393b6cf41c5e8a1f7b/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
+24
+25    <uses-permission android:name="com.birth2death.b2d.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+25-->[androidx.core:core:1.13.1] /Users/kushagrakumar/.gradle/caches/8.9/transforms/1ed307d3ab5cfd393b6cf41c5e8a1f7b/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
+25-->[androidx.core:core:1.13.1] /Users/kushagrakumar/.gradle/caches/8.9/transforms/1ed307d3ab5cfd393b6cf41c5e8a1f7b/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
+26
+27    <queries>
+27-->[com.google.ar:core:1.43.0] /Users/kushagrakumar/.gradle/caches/8.9/transforms/69da6a9f1935866a892367ff92d6381d/transformed/core-1.43.0/AndroidManifest.xml:20:5-27:15
+28        <package android:name="com.google.ar.core" />
+28-->[com.google.ar:core:1.43.0] /Users/kushagrakumar/.gradle/caches/8.9/transforms/69da6a9f1935866a892367ff92d6381d/transformed/core-1.43.0/AndroidManifest.xml:21:9-54
+28-->[com.google.ar:core:1.43.0] /Users/kushagrakumar/.gradle/caches/8.9/transforms/69da6a9f1935866a892367ff92d6381d/transformed/core-1.43.0/AndroidManifest.xml:21:18-51
+29        <package android:name="com.android.vending" />
+29-->[com.google.ar:core:1.43.0] /Users/kushagrakumar/.gradle/caches/8.9/transforms/69da6a9f1935866a892367ff92d6381d/transformed/core-1.43.0/AndroidManifest.xml:22:9-55
+29-->[com.google.ar:core:1.43.0] /Users/kushagrakumar/.gradle/caches/8.9/transforms/69da6a9f1935866a892367ff92d6381d/transformed/core-1.43.0/AndroidManifest.xml:22:18-52
+30
+31        <intent>
+31-->[com.google.ar:core:1.43.0] /Users/kushagrakumar/.gradle/caches/8.9/transforms/69da6a9f1935866a892367ff92d6381d/transformed/core-1.43.0/AndroidManifest.xml:24:9-26:18
+32            <action android:name="com.google.android.play.core.install.BIND_INSTALL_SERVICE" />
+32-->[com.google.ar:core:1.43.0] /Users/kushagrakumar/.gradle/caches/8.9/transforms/69da6a9f1935866a892367ff92d6381d/transformed/core-1.43.0/AndroidManifest.xml:25:13-96
+32-->[com.google.ar:core:1.43.0] /Users/kushagrakumar/.gradle/caches/8.9/transforms/69da6a9f1935866a892367ff92d6381d/transformed/core-1.43.0/AndroidManifest.xml:25:21-93
+33        </intent>
+34    </queries>
+35
+36    <application
+36-->/Users/kushagrakumar/Documents/GitHub/b2d-production/android-app/app/src/main/AndroidManifest.xml:8:5-28:19
+37        android:allowBackup="true"
+37-->/Users/kushagrakumar/Documents/GitHub/b2d-production/android-app/app/src/main/AndroidManifest.xml:9:9-35
+38        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+38-->[androidx.core:core:1.13.1] /Users/kushagrakumar/.gradle/caches/8.9/transforms/1ed307d3ab5cfd393b6cf41c5e8a1f7b/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
+39        android:debuggable="true"
+40        android:extractNativeLibs="false"
+41        android:icon="@android:drawable/sym_def_app_icon"
+41-->/Users/kushagrakumar/Documents/GitHub/b2d-production/android-app/app/src/main/AndroidManifest.xml:10:9-58
+42        android:label="@string/app_name"
+42-->/Users/kushagrakumar/Documents/GitHub/b2d-production/android-app/app/src/main/AndroidManifest.xml:11:9-41
+43        android:supportsRtl="true"
+43-->/Users/kushagrakumar/Documents/GitHub/b2d-production/android-app/app/src/main/AndroidManifest.xml:12:9-35
+44        android:theme="@style/Theme.B2D"
+44-->/Users/kushagrakumar/Documents/GitHub/b2d-production/android-app/app/src/main/AndroidManifest.xml:13:9-41
+45        android:usesCleartextTraffic="true" > <!-- Required for local HTTP development -->
+45-->/Users/kushagrakumar/Documents/GitHub/b2d-production/android-app/app/src/main/AndroidManifest.xml:14:9-44
+46
+47        <activity
+47-->/Users/kushagrakumar/Documents/GitHub/b2d-production/android-app/app/src/main/AndroidManifest.xml:16:9-24:20
+48            android:name="com.birth2death.b2d.MainActivity"
+48-->/Users/kushagrakumar/Documents/GitHub/b2d-production/android-app/app/src/main/AndroidManifest.xml:17:13-41
+49            android:exported="true"
+49-->/Users/kushagrakumar/Documents/GitHub/b2d-production/android-app/app/src/main/AndroidManifest.xml:18:13-36
+50            android:theme="@style/Theme.B2D" >
+50-->/Users/kushagrakumar/Documents/GitHub/b2d-production/android-app/app/src/main/AndroidManifest.xml:19:13-45
+51            <intent-filter>
+51-->/Users/kushagrakumar/Documents/GitHub/b2d-production/android-app/app/src/main/AndroidManifest.xml:20:13-23:29
+52                <action android:name="android.intent.action.MAIN" />
+52-->/Users/kushagrakumar/Documents/GitHub/b2d-production/android-app/app/src/main/AndroidManifest.xml:21:17-69
+52-->/Users/kushagrakumar/Documents/GitHub/b2d-production/android-app/app/src/main/AndroidManifest.xml:21:25-66
+53
+54                <category android:name="android.intent.category.LAUNCHER" />
+54-->/Users/kushagrakumar/Documents/GitHub/b2d-production/android-app/app/src/main/AndroidManifest.xml:22:17-77
+54-->/Users/kushagrakumar/Documents/GitHub/b2d-production/android-app/app/src/main/AndroidManifest.xml:22:27-74
+55            </intent-filter>
+56        </activity>
+57
+58        <!-- ARCore meta-data -->
+59        <meta-data
+59-->/Users/kushagrakumar/Documents/GitHub/b2d-production/android-app/app/src/main/AndroidManifest.xml:27:9-81
+60            android:name="com.google.ar.core"
+60-->/Users/kushagrakumar/Documents/GitHub/b2d-production/android-app/app/src/main/AndroidManifest.xml:27:20-53
+61            android:value="optional" />
+61-->/Users/kushagrakumar/Documents/GitHub/b2d-production/android-app/app/src/main/AndroidManifest.xml:27:54-78
+62
+63        <activity
+63-->[androidx.compose.ui:ui-tooling-android:1.6.7] /Users/kushagrakumar/.gradle/caches/8.9/transforms/a5c233cd518e760f1dbf988745cf7c54/transformed/ui-tooling-release/AndroidManifest.xml:23:9-25:39
+64            android:name="androidx.compose.ui.tooling.PreviewActivity"
+64-->[androidx.compose.ui:ui-tooling-android:1.6.7] /Users/kushagrakumar/.gradle/caches/8.9/transforms/a5c233cd518e760f1dbf988745cf7c54/transformed/ui-tooling-release/AndroidManifest.xml:24:13-71
+65            android:exported="true" />
+65-->[androidx.compose.ui:ui-tooling-android:1.6.7] /Users/kushagrakumar/.gradle/caches/8.9/transforms/a5c233cd518e760f1dbf988745cf7c54/transformed/ui-tooling-release/AndroidManifest.xml:25:13-36
+66
+67        <provider
+67-->[androidx.emoji2:emoji2:1.3.0] /Users/kushagrakumar/.gradle/caches/8.9/transforms/0b256c5ff1c5387aefa09debc0e299e0/transformed/emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
+68            android:name="androidx.startup.InitializationProvider"
+68-->[androidx.emoji2:emoji2:1.3.0] /Users/kushagrakumar/.gradle/caches/8.9/transforms/0b256c5ff1c5387aefa09debc0e299e0/transformed/emoji2-1.3.0/AndroidManifest.xml:25:13-67
+69            android:authorities="com.birth2death.b2d.androidx-startup"
+69-->[androidx.emoji2:emoji2:1.3.0] /Users/kushagrakumar/.gradle/caches/8.9/transforms/0b256c5ff1c5387aefa09debc0e299e0/transformed/emoji2-1.3.0/AndroidManifest.xml:26:13-68
+70            android:exported="false" >
+70-->[androidx.emoji2:emoji2:1.3.0] /Users/kushagrakumar/.gradle/caches/8.9/transforms/0b256c5ff1c5387aefa09debc0e299e0/transformed/emoji2-1.3.0/AndroidManifest.xml:27:13-37
+71            <meta-data
+71-->[androidx.emoji2:emoji2:1.3.0] /Users/kushagrakumar/.gradle/caches/8.9/transforms/0b256c5ff1c5387aefa09debc0e299e0/transformed/emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
+72                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+72-->[androidx.emoji2:emoji2:1.3.0] /Users/kushagrakumar/.gradle/caches/8.9/transforms/0b256c5ff1c5387aefa09debc0e299e0/transformed/emoji2-1.3.0/AndroidManifest.xml:30:17-75
+73                android:value="androidx.startup" />
+73-->[androidx.emoji2:emoji2:1.3.0] /Users/kushagrakumar/.gradle/caches/8.9/transforms/0b256c5ff1c5387aefa09debc0e299e0/transformed/emoji2-1.3.0/AndroidManifest.xml:31:17-49
+74            <meta-data
+74-->[androidx.lifecycle:lifecycle-process:2.8.0] /Users/kushagrakumar/.gradle/caches/8.9/transforms/067f9c978ac08c64cd77d50ff9df284e/transformed/lifecycle-process-2.8.0/AndroidManifest.xml:29:13-31:52
+75                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+75-->[androidx.lifecycle:lifecycle-process:2.8.0] /Users/kushagrakumar/.gradle/caches/8.9/transforms/067f9c978ac08c64cd77d50ff9df284e/transformed/lifecycle-process-2.8.0/AndroidManifest.xml:30:17-78
+76                android:value="androidx.startup" />
+76-->[androidx.lifecycle:lifecycle-process:2.8.0] /Users/kushagrakumar/.gradle/caches/8.9/transforms/067f9c978ac08c64cd77d50ff9df284e/transformed/lifecycle-process-2.8.0/AndroidManifest.xml:31:17-49
+77            <meta-data
+77-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/kushagrakumar/.gradle/caches/8.9/transforms/83088dc3ea5124a193f7c55a4b37a53e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
+78                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+78-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/kushagrakumar/.gradle/caches/8.9/transforms/83088dc3ea5124a193f7c55a4b37a53e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
+79                android:value="androidx.startup" />
+79-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/kushagrakumar/.gradle/caches/8.9/transforms/83088dc3ea5124a193f7c55a4b37a53e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
+80        </provider>
+81
+82        <activity
+82-->[androidx.compose.ui:ui-test-manifest:1.6.7] /Users/kushagrakumar/.gradle/caches/8.9/transforms/6e11de94c8f40834d810bf773df8c4bc/transformed/ui-test-manifest-1.6.7/AndroidManifest.xml:23:9-25:39
+83            android:name="androidx.activity.ComponentActivity"
+83-->[androidx.compose.ui:ui-test-manifest:1.6.7] /Users/kushagrakumar/.gradle/caches/8.9/transforms/6e11de94c8f40834d810bf773df8c4bc/transformed/ui-test-manifest-1.6.7/AndroidManifest.xml:24:13-63
+84            android:exported="true" /> <!-- The minimal version code of ARCore APK required for an app using this SDK. -->
+84-->[androidx.compose.ui:ui-test-manifest:1.6.7] /Users/kushagrakumar/.gradle/caches/8.9/transforms/6e11de94c8f40834d810bf773df8c4bc/transformed/ui-test-manifest-1.6.7/AndroidManifest.xml:25:13-36
+85        <meta-data
+85-->[com.google.ar:core:1.43.0] /Users/kushagrakumar/.gradle/caches/8.9/transforms/69da6a9f1935866a892367ff92d6381d/transformed/core-1.43.0/AndroidManifest.xml:32:9-34:41
+86            android:name="com.google.ar.core.min_apk_version"
+86-->[com.google.ar:core:1.43.0] /Users/kushagrakumar/.gradle/caches/8.9/transforms/69da6a9f1935866a892367ff92d6381d/transformed/core-1.43.0/AndroidManifest.xml:33:13-62
+87            android:value="240350000" /> <!-- This activity is critical for installing ARCore when it is not already present. -->
+87-->[com.google.ar:core:1.43.0] /Users/kushagrakumar/.gradle/caches/8.9/transforms/69da6a9f1935866a892367ff92d6381d/transformed/core-1.43.0/AndroidManifest.xml:34:13-38
+88        <activity
+88-->[com.google.ar:core:1.43.0] /Users/kushagrakumar/.gradle/caches/8.9/transforms/69da6a9f1935866a892367ff92d6381d/transformed/core-1.43.0/AndroidManifest.xml:36:9-42:80
+89            android:name="com.google.ar.core.InstallActivity"
+89-->[com.google.ar:core:1.43.0] /Users/kushagrakumar/.gradle/caches/8.9/transforms/69da6a9f1935866a892367ff92d6381d/transformed/core-1.43.0/AndroidManifest.xml:37:13-62
+90            android:configChanges="keyboardHidden|orientation|screenSize"
+90-->[com.google.ar:core:1.43.0] /Users/kushagrakumar/.gradle/caches/8.9/transforms/69da6a9f1935866a892367ff92d6381d/transformed/core-1.43.0/AndroidManifest.xml:38:13-74
+91            android:excludeFromRecents="true"
+91-->[com.google.ar:core:1.43.0] /Users/kushagrakumar/.gradle/caches/8.9/transforms/69da6a9f1935866a892367ff92d6381d/transformed/core-1.43.0/AndroidManifest.xml:39:13-46
+92            android:exported="false"
+92-->[com.google.ar:core:1.43.0] /Users/kushagrakumar/.gradle/caches/8.9/transforms/69da6a9f1935866a892367ff92d6381d/transformed/core-1.43.0/AndroidManifest.xml:40:13-37
+93            android:launchMode="singleTop"
+93-->[com.google.ar:core:1.43.0] /Users/kushagrakumar/.gradle/caches/8.9/transforms/69da6a9f1935866a892367ff92d6381d/transformed/core-1.43.0/AndroidManifest.xml:41:13-43
+94            android:theme="@android:style/Theme.Material.Light.Dialog.Alert" />
+94-->[com.google.ar:core:1.43.0] /Users/kushagrakumar/.gradle/caches/8.9/transforms/69da6a9f1935866a892367ff92d6381d/transformed/core-1.43.0/AndroidManifest.xml:42:13-77
+95
+96        <receiver
+96-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/kushagrakumar/.gradle/caches/8.9/transforms/83088dc3ea5124a193f7c55a4b37a53e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
+97            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+97-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/kushagrakumar/.gradle/caches/8.9/transforms/83088dc3ea5124a193f7c55a4b37a53e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
+98            android:directBootAware="false"
+98-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/kushagrakumar/.gradle/caches/8.9/transforms/83088dc3ea5124a193f7c55a4b37a53e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+99            android:enabled="true"
+99-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/kushagrakumar/.gradle/caches/8.9/transforms/83088dc3ea5124a193f7c55a4b37a53e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
+100            android:exported="true"
+100-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/kushagrakumar/.gradle/caches/8.9/transforms/83088dc3ea5124a193f7c55a4b37a53e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
+101            android:permission="android.permission.DUMP" >
+101-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/kushagrakumar/.gradle/caches/8.9/transforms/83088dc3ea5124a193f7c55a4b37a53e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
+102            <intent-filter>
+102-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/kushagrakumar/.gradle/caches/8.9/transforms/83088dc3ea5124a193f7c55a4b37a53e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
+103                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+103-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/kushagrakumar/.gradle/caches/8.9/transforms/83088dc3ea5124a193f7c55a4b37a53e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
+103-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/kushagrakumar/.gradle/caches/8.9/transforms/83088dc3ea5124a193f7c55a4b37a53e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
+104            </intent-filter>
+105            <intent-filter>
+105-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/kushagrakumar/.gradle/caches/8.9/transforms/83088dc3ea5124a193f7c55a4b37a53e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
+106                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+106-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/kushagrakumar/.gradle/caches/8.9/transforms/83088dc3ea5124a193f7c55a4b37a53e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
+106-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/kushagrakumar/.gradle/caches/8.9/transforms/83088dc3ea5124a193f7c55a4b37a53e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
+107            </intent-filter>
+108            <intent-filter>
+108-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/kushagrakumar/.gradle/caches/8.9/transforms/83088dc3ea5124a193f7c55a4b37a53e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
+109                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+109-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/kushagrakumar/.gradle/caches/8.9/transforms/83088dc3ea5124a193f7c55a4b37a53e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
+109-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/kushagrakumar/.gradle/caches/8.9/transforms/83088dc3ea5124a193f7c55a4b37a53e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
+110            </intent-filter>
+111            <intent-filter>
+111-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/kushagrakumar/.gradle/caches/8.9/transforms/83088dc3ea5124a193f7c55a4b37a53e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
+112                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+112-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/kushagrakumar/.gradle/caches/8.9/transforms/83088dc3ea5124a193f7c55a4b37a53e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
+112-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/kushagrakumar/.gradle/caches/8.9/transforms/83088dc3ea5124a193f7c55a4b37a53e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
+113            </intent-filter>
+114        </receiver>
+115    </application>
+116
+117</manifest>
